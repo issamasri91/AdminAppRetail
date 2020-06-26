@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AdminAppRetail</string>
+    <string name="signed_out">Sign out</string>
+    <string name="auth_failed">failed</string>
+    <string name="emailpassword_status_fmt">emailpass</string>
+    <string name="firebase_status_fmt">firebase status</string>
+</resources>

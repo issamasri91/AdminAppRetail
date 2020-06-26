@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "516181372300",
+    "firebase_url": "https://retailtenor.firebaseio.com",
+    "project_id": "retailtenor",
+    "storage_bucket": "retailtenor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516181372300:android:4a67ea27e4d2fd1875faa9",
+        "android_client_info": {
+          "package_name": "com.issamelasri.adminappretail"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "516181372300-kjqmisugkhhduiti1h5olkm30gu9hce2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-L3q371E0gnWAJciZKwXTkXew5lkmmLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "516181372300-kjqmisugkhhduiti1h5olkm30gu9hce2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516181372300:android:c0bc1c215c0578a675faa9",
+        "android_client_info": {
+          "package_name": "com.issamelasri.retailapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "516181372300-kjqmisugkhhduiti1h5olkm30gu9hce2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-L3q371E0gnWAJciZKwXTkXew5lkmmLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "516181372300-kjqmisugkhhduiti1h5olkm30gu9hce2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516181372300:android:eea2fdd23b26a0de75faa9",
+        "android_client_info": {
+          "package_name": "com.issamelasri.retailappadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "516181372300-kjqmisugkhhduiti1h5olkm30gu9hce2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-L3q371E0gnWAJciZKwXTkXew5lkmmLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "516181372300-kjqmisugkhhduiti1h5olkm30gu9hce2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
