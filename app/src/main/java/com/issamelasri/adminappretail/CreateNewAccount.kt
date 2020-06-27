@@ -33,7 +33,10 @@ class CreateNewAccount : AppCompatActivity() , View.OnClickListener {
                 )
                 R.id.signOutButton -> signOut()
                 R.id.verifyEmailButton -> sendEmailVerification()
-                R.id.reloadButton -> reload()
+                R.id.reloadButton -> {
+
+                    reload()
+                }
             }
         }
     }
@@ -186,11 +189,12 @@ class CreateNewAccount : AppCompatActivity() , View.OnClickListener {
         auth.currentUser!!.reload().addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 updateUI(auth.currentUser)
-                Toast.makeText(
-                    this,
-                    "Reload successful!",
-                    Toast.LENGTH_SHORT
-                ).show()
+                Toast.makeText(this, "Reload successful!",
+                    Toast.LENGTH_SHORT).show()
+                val email = auth.currentUser!!.email
+                val i = Intent(this, ListeVendeur::class.java)
+
+
             } else {
                 Log.e(TAG, "reload", task.exception)
                 Toast.makeText(
