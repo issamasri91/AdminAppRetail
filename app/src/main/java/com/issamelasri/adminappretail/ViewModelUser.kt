@@ -44,6 +44,10 @@ class ViewModelUser : ViewModel() {
         }
     }
 
+    fun getRealtimeUpdates() {
+        dbClients.addChildEventListener(childEventListener)
+    }
+
     fun fitchClients() {
         dbClients.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onCancelled(erreur: DatabaseError) {

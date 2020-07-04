@@ -7,7 +7,7 @@ class Vendeur {
 
     @get:Exclude
     var id = ""
-    val email = ""
+    var email = ""
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
         if (javaClass != other?.javaClass) return false

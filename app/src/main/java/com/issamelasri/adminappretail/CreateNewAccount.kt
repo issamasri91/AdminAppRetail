@@ -8,6 +8,7 @@ import android.text.TextUtils
 import android.util.Log
 import android.view.View
 import android.widget.Toast
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthMultiFactorException
@@ -184,14 +185,23 @@ class CreateNewAccount : AppCompatActivity() , View.OnClickListener {
             }
         // [END send_email_verification]
     }
-
+    val model: ViewModelUser by viewModels()
     private fun reload() {
         auth.currentUser!!.reload().addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 updateUI(auth.currentUser)
-                Toast.makeText(this, "Reload successful!",
-                    Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    this, "Reload successful!",
+                    Toast.LENGTH_SHORT
+                ).show()
                 val email = auth.currentUser!!.email
+                val id = auth.currentUser!!.uid
+                val vendeur = Vendeur()
+                if (email != null) {
+                    vendeur.id = id
+                    vendeur.email = email
+                    model.addClient(vendeur)
+                }
                 val i = Intent(this, ListeVendeur::class.java)
 
 

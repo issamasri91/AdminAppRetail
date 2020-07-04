@@ -1,8 +1,8 @@
 package com.issamelasri.adminappretail
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -18,7 +18,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(i)
         }
         buttonVendeur.setOnClickListener {
-
+            val i = Intent(this, ListeVendeur::class.java)
+            startActivity(i)
         }
     }
 }

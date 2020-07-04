@@ -4,4 +4,7 @@
     <string name="auth_failed">failed</string>
     <string name="emailpassword_status_fmt">emailpass</string>
     <string name="firebase_status_fmt">firebase status</string>
+    <string name="client_add">ajouter Vendeur</string>
+    <string name="erreur">erreur</string>
+    <string name="Vendeur_suprime">vendeur suprime</string>
 </resources>

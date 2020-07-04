@@ -8,43 +8,19 @@
     app:cardCornerRadius="5dp"
     app:cardElevation="5dp">
 
-    <androidx.gridlayout.widget.GridLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fitsSystemWindows="true"
-        app:columnCount="2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/email_text"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginRight="50dp"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="TextView"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/email_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:fontFamily="sans-serif-medium"
-                android:padding="10dp"
-                android:text="vendeur list "
-                android:textSize="24sp"
-                app:layout_columnWeight="1" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <ImageButton
-                android:id="@+id/deleteImageButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:srcCompat="@android:drawable/btn_dialog" />
-        </LinearLayout>
-
-    </androidx.gridlayout.widget.GridLayout>
+    </LinearLayout>
 
 </androidx.cardview.widget.CardView>
