@@ -53,13 +53,11 @@
                 android:id="@+id/stock_accessoir_cable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
 
             <TextView
-                android:id="@+id/textView22"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="carte memoir"
@@ -68,17 +66,14 @@
                 app:layout_columnWeight="1" />
 
             <TextView
-
                 android:id="@+id/stock_carte_memoir"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
 
             <TextView
-                android:id="@+id/textView24"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Chargeur"
@@ -87,16 +82,14 @@
                 app:layout_columnWeight="1" />
 
             <TextView
-                android:id="@+id/chargeur_stock"
+                android:id="@+id/char_stock_acc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
 
             <TextView
-                android:id="@+id/textView17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Eceuteur"
@@ -108,7 +101,6 @@
                 android:id="@+id/ecteur_stock"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
@@ -126,7 +118,6 @@
                 android:id="@+id/protection_stock"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
@@ -144,7 +135,6 @@
                 android:id="@+id/puchet_stock"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
@@ -162,7 +152,6 @@
                 android:id="@+id/supportStock"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
@@ -180,7 +169,6 @@
                 android:id="@+id/autre_acc_stock"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
