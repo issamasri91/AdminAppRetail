@@ -3,6 +3,7 @@ package com.issamelasri.adminappretail
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.issamelasri.adminappretail.stock.StockVendeur
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -14,7 +15,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(i)
         }
         buttonStock.setOnClickListener {
-            val i = Intent(this,AjouterNewStock::class.java)
+            val i = Intent(this, StockVendeur::class.java)
             startActivity(i)
         }
         buttonVendeur.setOnClickListener {

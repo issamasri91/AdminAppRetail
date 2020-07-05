@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".stock.StockSimFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            app:columnCount="2"
+            app:rowCount="8">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SIM"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantité"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#7CE040FB"
+                android:text="INWI"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                android:id="@+id/stock_inwi_sim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#81E040FB"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#A4FFAB40"
+                android:text="ORANGE"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                android:id="@+id/stock_orange_sim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#A4FFAB40"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#9740C4FF"
+                android:text="IAM"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                android:id="@+id/stock_iam_sim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#9740C4FF"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_columnWeight="1" />
+
+        </androidx.gridlayout.widget.GridLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
