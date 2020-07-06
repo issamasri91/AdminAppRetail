@@ -50,11 +50,22 @@ class StockVendeur : AppCompatActivity() {
                 }
             }
         })
+
         fab.setOnClickListener {
-            val dialog = MaterialDialog(this)
+            val dialog: MaterialDialog = MaterialDialog(this)
                 .noAutoDismiss()
-            dialog.customView(R.layout.enter_acc_stock)
-            //init
+            when (pageActive) {
+                0 -> {
+                    dialog.customView(R.layout.enter_acc_stock)
+                }
+                1 -> {
+                    dialog.customView(R.layout.enter_stock_phones)
+                }
+
+            }
+
+
+            /*
             dialog.stock_accessoir_cable_editText.setText(stock_accessoir_cable.text)
             dialog.stock_carte_memoir_editText.setText(stock_carte_memoir.text)
             dialog.stock_chargeur.setText(char_stock_acc.text)
@@ -62,11 +73,12 @@ class StockVendeur : AppCompatActivity() {
             dialog.stock_protection.setText(protection_stock.text)
             dialog.stock_pochet.setText(puchet_stock.text)
             dialog.stock_support.setText(supportStock.text)
-            dialog.stock_autre.setText(autre_acc_stock.text)
+            dialog.stock_autre.setText(autre_acc_stock.text)*/
 
             dialog.positiveButton {
                 when (pageActive) {
                     0 -> {
+
                         val cable = dialog.stock_accessoir_cable_editText.text
                         stock_accessoir_cable.text = cable
                         val carteMimoir = dialog.stock_carte_memoir_editText.text
@@ -88,6 +100,7 @@ class StockVendeur : AppCompatActivity() {
                         Toast.makeText(applicationContext, "stock change", Toast.LENGTH_LONG).show()
                     }
                     1 -> {
+
                     }
                     2 -> {
                     }

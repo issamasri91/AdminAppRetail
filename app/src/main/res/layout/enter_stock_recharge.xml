@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="10dp"
@@ -9,8 +8,7 @@
     android:fillViewport="true"
     android:orientation="vertical"
     android:overScrollMode="always"
-    android:scrollbars="vertical"
-    tools:context=".stock.StockRechFragment">
+    android:scrollbars="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -54,7 +52,6 @@
                     app:layout_columnWeight="1" />
 
                 <TextView
-                    android:id="@+id/textView61"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Scratch 5dh"
@@ -62,17 +59,15 @@
                     android:textSize="16sp"
                     app:layout_columnWeight="1" />
 
-                <TextView
-                    android:id="@+id/textView62"
+                <EditText
+                    android:id="@+id/inwi_5dh_edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="0"
                     android:textAlignment="center"
                     android:textSize="16sp"
                     app:layout_columnWeight="1" />
 
                 <TextView
-                    android:id="@+id/textView63"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Scratch 10dh"
@@ -80,12 +75,12 @@
                     android:textSize="16sp"
                     app:layout_columnWeight="1" />
 
-                <TextView
-                    android:id="@+id/textView64"
+                <EditText
+                    android:id="@+id/inwi_10dh_edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="0"
                     android:textAlignment="center"
+
                     android:textSize="16sp"
                     app:layout_columnWeight="1" />
 
