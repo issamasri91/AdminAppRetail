@@ -1,6 +1,7 @@
 package com.issamelasri.adminappretail
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
@@ -9,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.database.FirebaseDatabase
+import com.issamelasri.adminappretail.stock.StockVendeur
 import kotlinx.android.synthetic.main.activity_liste_vendeur.*
 
 class ListeVendeur : AppCompatActivity(), RecyclerClickListener {
@@ -48,7 +50,12 @@ class ListeVendeur : AppCompatActivity(), RecyclerClickListener {
     }
 
     override fun onRecyclerItemClicked(view: View, client: Vendeur) {
-
+        view.setOnClickListener {
+            val i = Intent(this, StockVendeur::class.java)
+            val email = client.email.replace("@", "").replace(".", "")
+            i.putExtra(STOCK_CHILD, email)
+            startActivity(i)
+        }
     }
 
 }

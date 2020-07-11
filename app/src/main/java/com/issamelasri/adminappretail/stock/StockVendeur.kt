@@ -19,6 +19,7 @@ import kotlinx.android.synthetic.main.fragment_stock_acc.*
 
 class StockVendeur : AppCompatActivity() {
     private var stock: StockGlobal = StockGlobal()
+
     private val model: ViewModelStock by viewModels()
     private var pageActive = 0
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,11 +35,9 @@ class StockVendeur : AppCompatActivity() {
             override fun onTabReselected(tab: TabLayout.Tab?) {
 
             }
-
             override fun onTabUnselected(tab: TabLayout.Tab?) {
 
             }
-
             override fun onTabSelected(tab: TabLayout.Tab?) {
                 if (tab != null) {
                     when (tab.position) {
@@ -63,17 +62,6 @@ class StockVendeur : AppCompatActivity() {
                 }
 
             }
-
-
-            /*
-            dialog.stock_accessoir_cable_editText.setText(stock_accessoir_cable.text)
-            dialog.stock_carte_memoir_editText.setText(stock_carte_memoir.text)
-            dialog.stock_chargeur.setText(char_stock_acc.text)
-            dialog.stock_ecuteur.setText(ecteur_stock.text)
-            dialog.stock_protection.setText(protection_stock.text)
-            dialog.stock_pochet.setText(puchet_stock.text)
-            dialog.stock_support.setText(supportStock.text)
-            dialog.stock_autre.setText(autre_acc_stock.text)*/
 
             dialog.positiveButton {
                 when (pageActive) {
