@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.Observer
 import androidx.viewpager.widget.ViewPager
 import com.afollestad.materialdialogs.MaterialDialog
 import com.afollestad.materialdialogs.customview.customView
@@ -12,7 +11,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.tabs.TabLayout
 import com.issamelasri.adminappretail.R
 import com.issamelasri.adminappretail.STOCK_CHILD
-import com.issamelasri.adminappretail.stock.models.*
+import com.issamelasri.adminappretail.stock.models.StockGlobal
 import com.issamelasri.adminappretail.ui.main.SectionsPagerAdapter
 import kotlinx.android.synthetic.main.enter_acc_stock.*
 import kotlinx.android.synthetic.main.fragment_stock_acc.*
@@ -118,32 +117,6 @@ class StockVendeur : AppCompatActivity() {
             }
             dialog.show()
         }
-        model.fitchClients(email)
-        model.getRealtimeUpdates()
-        model.stocks.observe(this, Observer {
-            val stockAcc = StockAccessoir()
-            val rechaege = RechargeStock()
-            val sim = StockSim()
-            val phones = StockPhones()
-            stock_accessoir_cable.text = it.stockAccessoir.cable.toString()
-            stock_carte_memoir.text = it.stockAccessoir.carte.toString()
-            char_stock_acc.text = it.stockAccessoir.chargeur.toString()
-            ecteur_stock.text = it.stockAccessoir.earphone.toString()
-            protection_stock.text = it.stockAccessoir.protection.toString()
-            puchet_stock.text = it.stockAccessoir.puchet.toString()
-            supportStock.text = it.stockAccessoir.support.toString()
-            autre_acc_stock.text = it.stockAccessoir.aurteAcc.toString()
-            it.stockAccessoir = stockAcc
-            it.stockPhones = phones
-            it.recharge =rechaege
-            it.stockSim = sim
-            stock.stockAccessoir = stockAcc
-            stock.stockPhones = phones
-            stock.recharge = rechaege
-            stock.stockSim = sim
-
-
-        })
 
 
     }

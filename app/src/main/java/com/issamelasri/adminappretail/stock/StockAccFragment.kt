@@ -5,7 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.Observer
 import com.issamelasri.adminappretail.R
+import com.issamelasri.adminappretail.stock.models.*
+import kotlinx.android.synthetic.main.fragment_stock_acc.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -21,7 +25,8 @@ class StockAccFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
-
+    private val model: ViewModelStock by viewModels()
+    private var stock: StockGlobal = StockGlobal()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -36,6 +41,37 @@ class StockAccFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_stock_acc, container, false)
+    }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        model.fitchClients("elasriisssamgmailcom")
+        model.getRealtimeUpdates()
+        model.stocks.observe(viewLifecycleOwner, Observer {
+            val stockAcc = StockAccessoir()
+            val rechaege = RechargeStock()
+            val sim = StockSim()
+            val phones = StockPhones()
+            stock_accessoir_cable.text = it.stockAccessoir.cable.toString()
+            stock_carte_memoir.text = it.stockAccessoir.carte.toString()
+            char_stock_acc.text = it.stockAccessoir.chargeur.toString()
+            ecteur_stock.text = it.stockAccessoir.earphone.toString()
+            protection_stock.text = it.stockAccessoir.protection.toString()
+            puchet_stock.text = it.stockAccessoir.puchet.toString()
+            supportStock.text = it.stockAccessoir.support.toString()
+            autre_acc_stock.text = it.stockAccessoir.aurteAcc.toString()
+            it.stockAccessoir = stockAcc
+            it.stockPhones = phones
+            it.recharge = rechaege
+            it.stockSim = sim
+            stock.stockAccessoir = stockAcc
+            stock.stockPhones = phones
+            stock.recharge = rechaege
+            stock.stockSim = sim
+
+
+        })
+
     }
 
     companion object {
