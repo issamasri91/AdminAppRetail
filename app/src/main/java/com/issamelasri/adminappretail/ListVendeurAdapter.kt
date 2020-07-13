@@ -24,9 +24,9 @@ class ListVendeurAdapter:  RecyclerView.Adapter<ListVendeurAdapter.ClientViewMod
 
     override fun onBindViewHolder(holder: ClientViewModel, position: Int) {
         holder.view.email_text.text = clients[position].email
-    /*    holder.view.deleteImageButton.setOnClickListener {
-            listener?.onRecyclerItemClicked(it, clients[position])
-        }*/
+       holder.view.setOnClickListener {
+           listener?.onRecyclerItemClicked(it, clients[position])
+       }
     }
 
     fun addClient(client: Vendeur) {

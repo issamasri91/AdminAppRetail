@@ -11,6 +11,7 @@ import com.afollestad.materialdialogs.customview.customView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.tabs.TabLayout
 import com.issamelasri.adminappretail.R
+import com.issamelasri.adminappretail.STOCK_CHILD
 import com.issamelasri.adminappretail.stock.models.*
 import com.issamelasri.adminappretail.ui.main.SectionsPagerAdapter
 import kotlinx.android.synthetic.main.enter_acc_stock.*
@@ -18,7 +19,7 @@ import kotlinx.android.synthetic.main.fragment_stock_acc.*
 
 class StockVendeur : AppCompatActivity() {
     private var stock: StockGlobal = StockGlobal()
-    val email = "elasriisssamgmailcom"
+
     private val model: ViewModelStock by viewModels()
     private var pageActive = 0
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,6 +28,11 @@ class StockVendeur : AppCompatActivity() {
         val sectionsPagerAdapter = SectionsPagerAdapter(this, supportFragmentManager)
         val viewPager: ViewPager = findViewById(R.id.view_pager)
         viewPager.adapter = sectionsPagerAdapter
+        val email = if (intent != null) {
+            intent.extras?.get(STOCK_CHILD).toString()
+        } else {
+            return
+        }
         val tabs: TabLayout = findViewById(R.id.tabs)
         tabs.setupWithViewPager(viewPager)
         val fab: FloatingActionButton = findViewById(R.id.fab)
@@ -34,6 +40,7 @@ class StockVendeur : AppCompatActivity() {
             override fun onTabReselected(tab: TabLayout.Tab?) {
 
             }
+
             override fun onTabUnselected(tab: TabLayout.Tab?) {
 
             }
