@@ -24,28 +24,26 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SIM"
+                android:text="@string/sim"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_columnWeight="1" />
 
             <TextView
-                android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Quantité"
+                android:text="@string/quantit"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_columnWeight="1" />
 
             <TextView
-                android:id="@+id/textView19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#7CE040FB"
-                android:text="INWI"
+                android:text="@string/inwi"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
@@ -55,17 +53,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#81E040FB"
-                android:text="0"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
 
             <TextView
-                android:id="@+id/textView22"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#A4FFAB40"
-                android:text="ORANGE"
+                android:text="@string/orange"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
@@ -75,17 +71,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#A4FFAB40"
-                android:text="0"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
 
             <TextView
-                android:id="@+id/textView24"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#9740C4FF"
-                android:text="IAM"
+                android:text="@string/iam"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
@@ -95,7 +89,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#9740C4FF"
-                android:text="0"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />

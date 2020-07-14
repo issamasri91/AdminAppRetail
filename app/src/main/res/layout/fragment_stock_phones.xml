@@ -12,7 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        app:cardBackgroundColor="@color/cardview_light_background"
         app:cardCornerRadius="5dp"
         app:cardElevation="5dp">
 
@@ -26,27 +25,33 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Accessoir"
+                android:text="@string/accessoir"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_columnWeight="1" />
 
             <TextView
-                android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Quantité"
+                android:text="@string/quantit"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_columnWeight="1" />
 
             <TextView
-                android:id="@+id/textView19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nokia"
+                android:text="@string/nokia"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                android:id="@+id/stock_phones_nokia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
@@ -54,33 +59,15 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:text="@string/huawie"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
 
             <TextView
-                android:id="@+id/textView22"
+                android:id="@+id/stock_phones_hwaoui"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Huawie"
-                android:textAlignment="center"
-                android:textSize="16sp"
-                app:layout_columnWeight="1" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0"
-                android:textAlignment="center"
-                android:textSize="16sp"
-                app:layout_columnWeight="1" />
-
-            <TextView
-                android:id="@+id/textView24"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Logicom"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
@@ -88,97 +75,95 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:text="@string/logicom"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
 
             <TextView
-                android:id="@+id/textView17"
+                android:id="@+id/stock_phones_logicom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Accent"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
 
             <TextView
-                android:id="@+id/accentStock"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:text="@string/accent"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
 
             <TextView
-                android:id="@+id/textView18"
+                android:id="@+id/stock_phones_accent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Oppo"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
 
             <TextView
-                android:id="@+id/protection_stock"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:text="@string/oppo"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
 
             <TextView
-                android:id="@+id/textView15"
+                android:id="@+id/stock_phones_oppo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tecno"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
 
             <TextView
-                android:id="@+id/puchet_stock"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:text="@string/tecno"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
 
             <TextView
-                android:id="@+id/textView16"
+                android:id="@+id/stock_phones_tecno"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Samsung"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
 
             <TextView
-                android:id="@+id/supportStock"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:text="@string/samsung"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/stock_phones_samsung"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Autre"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
 
             <TextView
-                android:id="@+id/autre_acc_stock"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:text="@string/autre"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                android:id="@+id/stock_phones_autre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />

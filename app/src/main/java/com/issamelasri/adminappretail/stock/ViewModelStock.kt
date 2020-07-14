@@ -8,7 +8,6 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import com.issamelasri.adminappretail.STOCK_NODE
 import com.issamelasri.adminappretail.stock.models.StockGlobal
-import kotlin.math.log
 
 class ViewModelStock : ViewModel() {
 
@@ -69,6 +68,7 @@ class ViewModelStock : ViewModel() {
                                 stocks.stockAccessoir = it.stockAccessoir
                                 stocks.stockPhones = it.stockPhones
                                 stocks.stockSim = it.stockSim
+                                stocks.recharge = it.recharge
                             }
 
                         }

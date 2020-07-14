@@ -5,7 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.Observer
 import com.issamelasri.adminappretail.R
+import com.issamelasri.adminappretail.stock.models.*
+import kotlinx.android.synthetic.main.fragment_stock_sim.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -21,6 +25,8 @@ class StockSimFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+    private val model: ViewModelStock by viewModels()
+    private var stock: StockGlobal = StockGlobal()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,6 +42,29 @@ class StockSimFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_stock_sim, container, false)
+    }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        model.fitchClients("elasriisssamgmailcom")
+        model.getRealtimeUpdates()
+        model.stocks.observe(viewLifecycleOwner, Observer {
+            val stockAcc = StockAccessoir()
+            val rechaege = RechargeStock()
+            val sim = StockSim()
+            val phones = StockPhones()
+            stock_inwi_sim.text = it.stockSim.inwi.toString()
+            stock_orange_sim.text = it.stockSim.orange.toString()
+            stock_iam_sim.text = it.stockSim.iam.toString()
+            it.stockAccessoir = stockAcc
+            it.stockPhones = phones
+            it.recharge = rechaege
+            it.stockSim = sim
+            stock.stockAccessoir = stockAcc
+            stock.stockPhones = phones
+            stock.recharge = rechaege
+            stock.stockSim = sim
+        })
     }
 
     companion object {

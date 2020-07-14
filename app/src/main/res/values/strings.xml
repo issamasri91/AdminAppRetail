@@ -12,4 +12,18 @@
     <string name="tab_text_2">Tab 2</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="quantit">Quantité</string>
+    <string name="accessoir">Accessoir</string>
+    <string name="logicom">Logicom</string>
+    <string name="tecno">Tecno</string>
+    <string name="autre">Autre</string>
+    <string name="samsung">Samsung</string>
+    <string name="oppo">Oppo</string>
+    <string name="accent">Accent</string>
+    <string name="huawie">Huawie</string>
+    <string name="nokia">Nokia</string>
+    <string name="sim">SIM</string>
+    <string name="inwi">INWI</string>
+    <string name="orange">ORANGE</string>
+    <string name="iam">IAM</string>
 </resources>
