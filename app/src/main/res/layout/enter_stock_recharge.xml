@@ -85,7 +85,6 @@
                     app:layout_columnWeight="1" />
 
                 <TextView
-                    android:id="@+id/textView65"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Scratch 20dh"
@@ -93,8 +92,8 @@
                     android:textSize="16sp"
                     app:layout_columnWeight="1" />
 
-                <TextView
-                    android:id="@+id/textView66"
+                <EditText
+                    android:id="@+id/inwi_20_edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0"
@@ -103,7 +102,6 @@
                     app:layout_columnWeight="1" />
 
                 <TextView
-                    android:id="@+id/textView67"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Scratch 50dh"
@@ -111,8 +109,8 @@
                     android:textSize="16sp"
                     app:layout_columnWeight="1" />
 
-                <TextView
-                    android:id="@+id/textView68"
+                <EditText
+                    android:id="@+id/inwi_50_edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0"
@@ -121,7 +119,6 @@
                     app:layout_columnWeight="1" />
 
                 <TextView
-                    android:id="@+id/textView69"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Scratch 100dh"
@@ -129,8 +126,8 @@
                     android:textSize="16sp"
                     app:layout_columnWeight="1" />
 
-                <TextView
-                    android:id="@+id/textView70"
+                <EditText
+                    android:id="@+id/inwi_100_edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0"
@@ -139,7 +136,6 @@
                     app:layout_columnWeight="1" />
 
                 <TextView
-                    android:id="@+id/textView71"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="dealer 500dh"
@@ -147,8 +143,8 @@
                     android:textSize="16sp"
                     app:layout_columnWeight="1" />
 
-                <TextView
-                    android:id="@+id/textView72"
+                <EditText
+                    android:id="@+id/inwi_500_edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0"
@@ -157,7 +153,6 @@
                     app:layout_columnWeight="1" />
 
                 <TextView
-                    android:id="@+id/textView73"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="dealer 1000dh"
@@ -165,8 +160,8 @@
                     android:textSize="16sp"
                     app:layout_columnWeight="1" />
 
-                <TextView
-                    android:id="@+id/textView74"
+                <EditText
+                    android:id="@+id/inwi_1000_edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0"
@@ -175,7 +170,6 @@
                     app:layout_columnWeight="1" />
 
                 <TextView
-                    android:id="@+id/textView75"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="dealer 5000dh"
@@ -183,8 +177,8 @@
                     android:textSize="16sp"
                     app:layout_columnWeight="1" />
 
-                <TextView
-                    android:id="@+id/textView76"
+                <EditText
+                    android:id="@+id/inwi_5000_edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0"
@@ -209,7 +203,6 @@
                 app:columnCount="2">
 
                 <TextView
-                    android:id="@+id/textView41"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="ORANGE"
@@ -219,7 +212,6 @@
                     app:layout_columnWeight="1" />
 
                 <TextView
-                    android:id="@+id/textView42"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Quantité"
@@ -229,7 +221,6 @@
                     app:layout_columnWeight="1" />
 
                 <TextView
-                    android:id="@+id/textView43"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Scratch 5dh"
@@ -237,8 +228,8 @@
                     android:textSize="16sp"
                     app:layout_columnWeight="1" />
 
-                <TextView
-                    android:id="@+id/textView44"
+                <EditText
+                    android:id="@+id/orange_5_edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0"
@@ -247,7 +238,6 @@
                     app:layout_columnWeight="1" />
 
                 <TextView
-                    android:id="@+id/textView45"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Scratch 10dh"
@@ -255,8 +245,8 @@
                     android:textSize="16sp"
                     app:layout_columnWeight="1" />
 
-                <TextView
-                    android:id="@+id/textView46"
+                <EditText
+                    android:id="@+id/orange_10_edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0"
@@ -265,7 +255,6 @@
                     app:layout_columnWeight="1" />
 
                 <TextView
-                    android:id="@+id/textView47"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Scratch 20dh"
@@ -273,8 +262,8 @@
                     android:textSize="16sp"
                     app:layout_columnWeight="1" />
 
-                <TextView
-                    android:id="@+id/textView48"
+                <EditText
+                    android:id="@+id/orange_20_edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0"
@@ -283,7 +272,23 @@
                     app:layout_columnWeight="1" />
 
                 <TextView
-                    android:id="@+id/textView49"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scratch 25dh"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    app:layout_columnWeight="1" />
+
+                <EditText
+                    android:id="@+id/orange_25_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    app:layout_columnWeight="1" />
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Scratch 50dh"
@@ -291,8 +296,8 @@
                     android:textSize="16sp"
                     app:layout_columnWeight="1" />
 
-                <TextView
-                    android:id="@+id/textView50"
+                <EditText
+                    android:id="@+id/orange_50_edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0"
@@ -301,16 +306,15 @@
                     app:layout_columnWeight="1" />
 
                 <TextView
-                    android:id="@+id/textView51"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Scratch 100dh"
+                    android:text="dealer 100dh"
                     android:textAlignment="center"
                     android:textSize="16sp"
                     app:layout_columnWeight="1" />
 
-                <TextView
-                    android:id="@+id/textView52"
+                <EditText
+                    android:id="@+id/orange_100_edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0"
@@ -319,7 +323,6 @@
                     app:layout_columnWeight="1" />
 
                 <TextView
-                    android:id="@+id/textView53"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="dealer 500dh"
@@ -327,8 +330,8 @@
                     android:textSize="16sp"
                     app:layout_columnWeight="1" />
 
-                <TextView
-                    android:id="@+id/textView54"
+                <EditText
+                    android:id="@+id/orange_500_edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0"
@@ -336,41 +339,6 @@
                     android:textSize="16sp"
                     app:layout_columnWeight="1" />
 
-                <TextView
-                    android:id="@+id/textView55"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="dealer 1000dh"
-                    android:textAlignment="center"
-                    android:textSize="16sp"
-                    app:layout_columnWeight="1" />
-
-                <TextView
-                    android:id="@+id/textView56"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0"
-                    android:textAlignment="center"
-                    android:textSize="16sp"
-                    app:layout_columnWeight="1" />
-
-                <TextView
-                    android:id="@+id/textView57"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="dealer 5000dh"
-                    android:textAlignment="center"
-                    android:textSize="16sp"
-                    app:layout_columnWeight="1" />
-
-                <TextView
-                    android:id="@+id/textView58"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0"
-                    android:textAlignment="center"
-                    android:textSize="16sp"
-                    app:layout_columnWeight="1" />
             </androidx.gridlayout.widget.GridLayout>
         </androidx.cardview.widget.CardView>
 
@@ -391,7 +359,6 @@
                 app:columnCount="2">
 
                 <TextView
-                    android:id="@+id/textView77"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="IAM"
@@ -401,7 +368,6 @@
                     app:layout_columnWeight="1" />
 
                 <TextView
-                    android:id="@+id/textView78"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Quantité"
@@ -411,7 +377,6 @@
                     app:layout_columnWeight="1" />
 
                 <TextView
-                    android:id="@+id/textView79"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Scratch 5dh"
@@ -419,8 +384,8 @@
                     android:textSize="16sp"
                     app:layout_columnWeight="1" />
 
-                <TextView
-                    android:id="@+id/textView80"
+                <EditText
+                    android:id="@+id/iam5edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0"
@@ -437,8 +402,8 @@
                     android:textSize="16sp"
                     app:layout_columnWeight="1" />
 
-                <TextView
-                    android:id="@+id/textView82"
+                <EditText
+                    android:id="@+id/iam10edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0"
@@ -455,8 +420,8 @@
                     android:textSize="16sp"
                     app:layout_columnWeight="1" />
 
-                <TextView
-                    android:id="@+id/textView84"
+                <EditText
+                    android:id="@+id/iam20edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0"
@@ -473,8 +438,8 @@
                     android:textSize="16sp"
                     app:layout_columnWeight="1" />
 
-                <TextView
-                    android:id="@+id/textView86"
+                <EditText
+                    android:id="@+id/iam50edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0"
@@ -491,8 +456,8 @@
                     android:textSize="16sp"
                     app:layout_columnWeight="1" />
 
-                <TextView
-                    android:id="@+id/textView88"
+                <EditText
+                    android:id="@+id/iam100edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0"
@@ -509,8 +474,8 @@
                     android:textSize="16sp"
                     app:layout_columnWeight="1" />
 
-                <TextView
-                    android:id="@+id/textView90"
+                <EditText
+                    android:id="@+id/iam500edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0"
@@ -527,8 +492,8 @@
                     android:textSize="16sp"
                     app:layout_columnWeight="1" />
 
-                <TextView
-                    android:id="@+id/textView92"
+                <EditText
+                    android:id="@+id/iam1000edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0"
@@ -536,23 +501,6 @@
                     android:textSize="16sp"
                     app:layout_columnWeight="1" />
 
-                <TextView
-                    android:id="@+id/textView93"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="dealer 5000dh"
-                    android:textAlignment="center"
-                    android:textSize="16sp"
-                    app:layout_columnWeight="1" />
-
-                <TextView
-                    android:id="@+id/textView94"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0"
-                    android:textAlignment="center"
-                    android:textSize="16sp"
-                    app:layout_columnWeight="1" />
             </androidx.gridlayout.widget.GridLayout>
 
         </androidx.cardview.widget.CardView>

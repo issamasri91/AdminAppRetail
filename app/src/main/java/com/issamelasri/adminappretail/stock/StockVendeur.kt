@@ -14,7 +14,13 @@ import com.issamelasri.adminappretail.STOCK_CHILD
 import com.issamelasri.adminappretail.stock.models.StockGlobal
 import com.issamelasri.adminappretail.ui.main.SectionsPagerAdapter
 import kotlinx.android.synthetic.main.enter_acc_stock.*
+import kotlinx.android.synthetic.main.enter_stock_phones.*
+import kotlinx.android.synthetic.main.enter_stock_recharge.*
+import kotlinx.android.synthetic.main.enter_stock_sim.*
 import kotlinx.android.synthetic.main.fragment_stock_acc.*
+import kotlinx.android.synthetic.main.fragment_stock_phones.*
+import kotlinx.android.synthetic.main.fragment_stock_rech.*
+import kotlinx.android.synthetic.main.fragment_stock_sim.*
 
 class StockVendeur : AppCompatActivity() {
     private var stock: StockGlobal = StockGlobal()
@@ -65,6 +71,12 @@ class StockVendeur : AppCompatActivity() {
                 1 -> {
                     dialog.customView(R.layout.enter_stock_phones)
                 }
+                2 -> {
+                    dialog.customView(R.layout.enter_stock_recharge)
+                }
+                3 -> {
+                    dialog.customView(R.layout.enter_stock_sim)
+                }
 
             }
 
@@ -100,11 +112,69 @@ class StockVendeur : AppCompatActivity() {
                         Toast.makeText(applicationContext, "stock change", Toast.LENGTH_LONG).show()
                     }
                     1 -> {
+                        val nokia = dialog.nokia_stock_edit.text
+                        stock_phones_nokia.text = nokia
+                        val hwaui = dialog.hwauei_stock_edit.text
+                        stock_phones_hwaoui.text = hwaui
+                        val logicom = dialog.logicom_stock_edit.text
+                        stock_phones_logicom.text = logicom
+                        val accent = dialog.accent_stock_edit.text
+                        stock_phones_accent.text = accent
+                        val oppo = dialog.oppo_stock_edit.text
+                        stock_phones_oppo.text = oppo
+                        val tecno = dialog.tecno_stock_edit.text
+                        stock_phones_oppo.text = tecno
+                        val samsung = dialog.samsung_stock_edit.text
+                        stock_phones_samsung.text = samsung
+                        val autrePhones = dialog.autre_phones_edit.text
+                        stock_phones_autre.text = autrePhones
+                        stock.stockPhones.nokia = nokia.toString().toInt()
+                        stock.stockPhones.hwaui = hwaui.toString().toInt()
+                        stock.stockPhones.logicom = logicom.toString().toInt()
+                        stock.stockPhones.accent = accent.toString().toInt()
+                        stock.stockPhones.lenovo = oppo.toString().toInt()
+                        stock.stockPhones.tecno = tecno.toString().toInt()
+                        stock.stockPhones.samsung = samsung.toString().toInt()
+                        stock.stockPhones.autre = autrePhones.toString().toInt()
+                        model.addStock(stock, email)
+                        Toast.makeText(applicationContext, "stock change", Toast.LENGTH_LONG).show()
 
                     }
                     2 -> {
+                        //inwi
+                        inwi_5.text = dialog.inwi_5dh_edit.text
+                        inwi_10.text = dialog.inwi_10dh_edit.text
+                        inwi_20.text = dialog.inwi_20_edit.text
+                        inwi_50.text = dialog.inwi_50_edit.text
+                        inwi_100.text = dialog.inwi_1000_edit.text
+                        inwi_500.text = dialog.inwi_500_edit.text
+                        inwi_1000.text = dialog.inwi_1000_edit.text
+                        inwi_5000.text = dialog.inwi_5000_edit.text
+                        stock.recharge.inwiscratch5 = inwi_5.text.toString().toInt()
+                        stock.recharge.inwiscratch10 = inwi_10.text.toString().toInt()
+                        stock.recharge.inwiscratch20 = inwi_20.text.toString().toInt()
+                        stock.recharge.inwiscratch50 = inwi_50.text.toString().toInt()
+                        stock.recharge.inwiscratch100 = inwi_100.text.toString().toInt()
+                        stock.recharge.inwidealer500 = inwi_500.text.toString().toInt()
+                        stock.recharge.inwidealer1000 = inwi_100.text.toString().toInt()
+                        stock.recharge.inwidealer5000 = inwi_5000.text.toString().toInt()
+                        model.addStock(stock, email)
+                        Toast.makeText(applicationContext, "stock change", Toast.LENGTH_LONG).show()
+
+
                     }
                     3 -> {
+                        val inwiSim = dialog.stock_sim_inwi_edit.text
+                        stock_inwi_sim.text = inwiSim
+                        val orangeSim = dialog.stock_orange_sim_edittex.text
+                        stock_orange_sim.text = orangeSim
+                        val iamSim = dialog.stock_iam_sim_edittex.text
+                        stock_iam_sim.text = iamSim
+                        stock.stockSim.inwi = inwiSim.toString().toInt()
+                        stock.stockSim.orange = orangeSim.toString().toInt()
+                        stock.stockSim.iam = iamSim.toString().toInt()
+                        model.addStock(stock, email)
+                        Toast.makeText(applicationContext, "stock change", Toast.LENGTH_LONG).show()
                     }
                 }
 
