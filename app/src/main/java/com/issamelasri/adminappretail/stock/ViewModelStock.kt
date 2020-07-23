@@ -6,6 +6,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
+import com.issamelasri.adminappretail.STOCK_CHILD
 import com.issamelasri.adminappretail.STOCK_NODE
 import com.issamelasri.adminappretail.stock.models.StockGlobal
 
@@ -45,39 +46,35 @@ class ViewModelStock : ViewModel() {
         }
     }
 
-    fun getRealtimeUpdates() {
-        dbClients.addChildEventListener(childEventListener)
+    fun getRealtimeUpdates(email: String) {
+        dbClients.child(email).addChildEventListener(childEventListener)
+        Log.d("up", email)
     }
 
-    fun fitchClients(email:String) {
+    fun fitchClients(email: String) {
         dbClients.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onCancelled(erreur: DatabaseError) {
             }
 
             override fun onDataChange(snapshot: DataSnapshot) {
                 if (snapshot.exists()) {
-                    val stocks = StockGlobal()
+                    var stocks = StockGlobal()
                     for (clientSnapshot in snapshot.children) {
                         val client = clientSnapshot.getValue(StockGlobal::class.java)
                         client?.id = clientSnapshot.key.toString()
-                        Log.d("id","the id is ${client?.id}")
-                        if (client?.id == email){
+                        Log.d("id", "the id is ${client?.id}")
+                        if (client?.id == email) {
+                            Log.d(STOCK_CHILD, email)
                             client.let {
-                                stocks.recharge = it.recharge
-                                Log.d("elasri", " acc is${it.stockAccessoir.aurteAcc}")
-                                stocks.stockAccessoir = it.stockAccessoir
-                                stocks.stockPhones = it.stockPhones
-                                stocks.stockSim = it.stockSim
-                                stocks.recharge = it.recharge
+                                stocks = it
+                                Log.d(STOCK_CHILD, it.stockAccessoir.cable.toString())
+
+                                _stocks.value = stocks
                             }
-
                         }
-
                     }
-                    _stocks.value = stocks
                 }
             }
-
         })
     }
 

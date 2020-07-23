@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/acc_frag"
     tools:context=".stock.StockAccFragment">
 
     <androidx.cardview.widget.CardView
@@ -53,6 +54,7 @@
                 android:id="@+id/stock_accessoir_cable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="0"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
@@ -69,6 +71,7 @@
                 android:id="@+id/stock_carte_memoir"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="0"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
@@ -85,6 +88,7 @@
                 android:id="@+id/char_stock_acc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="0"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
@@ -101,6 +105,7 @@
                 android:id="@+id/ecteur_stock"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="0"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
@@ -118,6 +123,7 @@
                 android:id="@+id/protection_stock"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="0"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
@@ -135,6 +141,7 @@
                 android:id="@+id/puchet_stock"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="0"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
@@ -152,6 +159,7 @@
                 android:id="@+id/supportStock"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="0"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
@@ -171,6 +179,7 @@
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
                 android:textSize="16sp"
+                android:text="0"
                 app:layout_columnWeight="1" />
 
         </androidx.gridlayout.widget.GridLayout>

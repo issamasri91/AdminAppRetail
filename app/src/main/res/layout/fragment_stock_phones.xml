@@ -52,6 +52,7 @@
                 android:id="@+id/stock_phones_nokia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="0"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
@@ -68,6 +69,7 @@
                 android:id="@+id/stock_phones_hwaoui"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="0"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
@@ -84,6 +86,7 @@
                 android:id="@+id/stock_phones_logicom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="0"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
@@ -100,6 +103,7 @@
                 android:id="@+id/stock_phones_accent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="0"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
@@ -116,6 +120,7 @@
                 android:id="@+id/stock_phones_oppo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="0"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
@@ -132,6 +137,7 @@
                 android:id="@+id/stock_phones_tecno"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="0"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
@@ -148,6 +154,7 @@
                 android:id="@+id/stock_phones_samsung"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="0"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:layout_columnWeight="1" />
@@ -166,6 +173,7 @@
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
                 android:textSize="16sp"
+                android:text="0"
                 app:layout_columnWeight="1" />
 
         </androidx.gridlayout.widget.GridLayout>

@@ -5,34 +5,31 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
 import com.issamelasri.adminappretail.R
-import com.issamelasri.adminappretail.stock.models.*
 import kotlinx.android.synthetic.main.fragment_stock_phones.*
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [StockPhonesFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class StockPhonesFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-    private val model: ViewModelStock by viewModels()
-    private var stock: StockGlobal = StockGlobal()
 
+    var nokia = "0"
+    var hwaui = "0"
+    var logicom = "0"
+    var accent = "0"
+    var oppo = "0"
+    var tecno = "0"
+    var samsung = "0"
+    var autrePhone = "0"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
+        if (savedInstanceState != null) {
+            nokia = savedInstanceState.get("nokia").toString()
+            hwaui = savedInstanceState.get("hwaui").toString()
+            logicom = savedInstanceState.get("logicom").toString()
+            accent = savedInstanceState.get("accent").toString()
+            oppo = savedInstanceState.get("oppo").toString()
+            tecno = savedInstanceState.get("tecno").toString()
+            samsung = savedInstanceState.get("samsung").toString()
+            autrePhone = savedInstanceState.get("autrePhone").toString()
+
         }
     }
 
@@ -46,51 +43,27 @@ class StockPhonesFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        model.fitchClients("elasriisssamgmailcom")
-        model.getRealtimeUpdates()
-        model.stocks.observe(viewLifecycleOwner, Observer {
-            val stockAcc = StockAccessoir()
-            val rechaege = RechargeStock()
-            val sim = StockSim()
-            val phones = StockPhones()
-            stock_phones_nokia.text = it.stockPhones.nokia.toString()
-            stock_phones_hwaoui.text = it.stockPhones.hwaui.toString()
-            stock_phones_logicom.text = it.stockPhones.logicom.toString()
-            stock_phones_accent.text = it.stockPhones.accent.toString()
-            stock_phones_oppo.text = it.stockPhones.lenovo.toString()
-            stock_phones_tecno.text = it.stockPhones.tecno.toString()
-            stock_phones_samsung.text = it.stockPhones.samsung.toString()
-            stock_phones_autre.text = it.stockPhones.autre.toString()
-            it.stockAccessoir = stockAcc
-            it.stockPhones = phones
-            it.recharge = rechaege
-            it.stockSim = sim
-            stock.stockAccessoir = stockAcc
-            stock.stockPhones = phones
-            stock.recharge = rechaege
-            stock.stockSim = sim
 
-
-        })
+        stock_phones_nokia.text = nokia
+        stock_phones_hwaoui.text = hwaui
+        stock_phones_logicom.text = logicom
+        stock_phones_accent.text = accent
+        stock_phones_oppo.text = oppo
+        stock_phones_tecno.text = tecno
+        stock_phones_samsung.text = samsung
+        stock_phones_autre.text = autrePhone
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment StockPhonesFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            StockPhonesFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putString("nokia", stock_phones_nokia.text.toString())
+        outState.putString("hwaui", stock_phones_hwaoui.text.toString())
+        outState.putString("logicom", stock_phones_logicom.text.toString())
+        outState.putString("accent", stock_phones_accent.text.toString())
+        outState.putString("oppo", stock_phones_oppo.text.toString())
+        outState.putString("tecno", stock_phones_tecno.text.toString())
+        outState.putString("samsung", stock_phones_samsung.text.toString())
+        outState.putString("autrePhone", stock_phones_autre.text.toString())
     }
+
 }

@@ -63,6 +63,7 @@
                     android:id="@+id/inwi_5dh_edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="0"
                     android:textAlignment="center"
                     android:textSize="16sp"
                     app:layout_columnWeight="1" />
@@ -79,8 +80,9 @@
                     android:id="@+id/inwi_10dh_edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAlignment="center"
+                    android:text="0"
 
+                    android:textAlignment="center"
                     android:textSize="16sp"
                     app:layout_columnWeight="1" />
 

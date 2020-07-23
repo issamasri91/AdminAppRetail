@@ -5,92 +5,66 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
 import com.issamelasri.adminappretail.R
-import com.issamelasri.adminappretail.stock.models.*
 import kotlinx.android.synthetic.main.fragment_stock_acc.*
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [StockAccFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class StockAccFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-    private val model: ViewModelStock by viewModels()
-    private var stock: StockGlobal = StockGlobal()
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+
         return inflater.inflate(R.layout.fragment_stock_acc, container, false)
+    }
+
+    var cable = "0"
+    var carteMemoir = "0"
+    var chargeur = "0"
+    var protection = "0"
+    var pochet = "0"
+    var support = "0"
+    var earphone = "0"
+    var autre = "0"
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        if (savedInstanceState != null) {
+            cable = savedInstanceState.get("cable").toString()
+            carteMemoir = savedInstanceState.get("memoir").toString()
+            chargeur = savedInstanceState.get("char").toString()
+            earphone = savedInstanceState.get("ear").toString()
+            protection = savedInstanceState.get("prot").toString()
+            pochet = savedInstanceState.get("poshet").toString()
+            support = savedInstanceState.get("supp").toString()
+            autre = savedInstanceState.get("autre").toString()
+
+        }
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        model.fitchClients("elasriisssamgmailcom")
-        model.getRealtimeUpdates()
-        model.stocks.observe(viewLifecycleOwner, Observer {
-            val stockAcc = StockAccessoir()
-            val rechaege = RechargeStock()
-            val sim = StockSim()
-            val phones = StockPhones()
-            stock_accessoir_cable.text = it.stockAccessoir.cable.toString()
-            stock_carte_memoir.text = it.stockAccessoir.carte.toString()
-            char_stock_acc.text = it.stockAccessoir.chargeur.toString()
-            ecteur_stock.text = it.stockAccessoir.earphone.toString()
-            protection_stock.text = it.stockAccessoir.protection.toString()
-            puchet_stock.text = it.stockAccessoir.puchet.toString()
-            supportStock.text = it.stockAccessoir.support.toString()
-            autre_acc_stock.text = it.stockAccessoir.aurteAcc.toString()
-            it.stockAccessoir = stockAcc
-            it.stockPhones = phones
-            it.recharge = rechaege
-            it.stockSim = sim
-            stock.stockAccessoir = stockAcc
-            stock.stockPhones = phones
-            stock.recharge = rechaege
-            stock.stockSim = sim
-
-
-        })
-
+        stock_accessoir_cable.text = cable
+        stock_carte_memoir.text = carteMemoir
+        char_stock_acc.text = chargeur
+        ecteur_stock.text = earphone
+        protection_stock.text = protection
+        puchet_stock.text = pochet
+        supportStock.text = support
+        autre_acc_stock.text = autre
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment StockAccFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            StockAccFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putString("cable", stock_accessoir_cable.text.toString())
+        outState.putString("memoir", stock_carte_memoir.text.toString())
+        outState.putString("char", char_stock_acc.text.toString())
+        outState.putString("ear", ecteur_stock.text.toString())
+        outState.putString("prot", protection_stock.text.toString())
+        outState.putString("poshet", puchet_stock.text.toString())
+        outState.putString("supp", supportStock.text.toString())
+        outState.putString("autre", autre_acc_stock.text.toString())
+
     }
 }

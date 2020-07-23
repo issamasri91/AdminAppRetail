@@ -9,13 +9,11 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.google.firebase.database.FirebaseDatabase
 import com.issamelasri.adminappretail.stock.StockVendeur
 import kotlinx.android.synthetic.main.activity_liste_vendeur.*
 
 class ListeVendeur : AppCompatActivity(), RecyclerClickListener {
 
-    private val rootNode = FirebaseDatabase.getInstance().getReference(LIST_USER)
     private val adapter = ListVendeurAdapter()
     private val model: ViewModelUser by viewModels()
 
@@ -47,15 +45,24 @@ class ListeVendeur : AppCompatActivity(), RecyclerClickListener {
             Toast.makeText(applicationContext, message, Toast.LENGTH_LONG).show()
 
         })
+
+    }
+
+    var email = ""
+    override fun onPause() {
+        super.onPause()
+        email = ""
+
     }
 
     override fun onRecyclerItemClicked(view: View, client: Vendeur) {
         view.setOnClickListener {
             val i = Intent(this, StockVendeur::class.java)
-            val email = client.email.replace("@", "").replace(".", "")
+            email = client.email.replace("@", "").replace(".", "")
             i.putExtra(STOCK_CHILD, email)
             startActivity(i)
         }
     }
+
 
 }
